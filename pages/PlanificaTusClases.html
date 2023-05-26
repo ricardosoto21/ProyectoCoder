@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planifica tus clases</title>
+    
+    <!--Google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- Css Sheets-->
+
+    <link rel="stylesheet" href="../css/PlanificaTusClases.css">
+</head>
+<body>
+    <header>
+        <h1>Planifica tus clases</h1>
+        <nav>
+            <ul class="men-horizontal-1">
+                <li><a href="../index.html" id="Inicio">Inicio</a></li>
+                <li><a href="../pages/NuestroTrabajo.html" id="NuestroTrabajo">Nuestro Trabajo</a></li>
+                <li><a href="../pages/PlanificaTusClases.html" id="PlanificaTusClases">Planifica tus clases</a></li>
+                <li><a href="../pages/Registro.html"  id="Registro">Registro</a></li>
+                <li><a href="../pages/LogIn.html"  id="LogIn">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="info-section">
+            <div class="planning-section">
+                <h2>Planificación de Clases Personalizada</h2>
+                <p>El proceso de planificación de clases con nuestro Planificador de Clases Personalizado es simple y efectivo. Diseñamos planes de estudio a medida para tus necesidades específicas, siguiendo estos pasos:</p>
+                <ol class="process-steps">
+                <li><strong>Llena el formulario:</strong> Proporciónanos información detallada sobre tus necesidades y expectativas completando nuestro formulario de planificación de clases. Cuanta más información nos proporciones, mejor podremos adaptar la planificación a tus requerimientos.</li>
+                <li><strong>Generamos la planificación:</strong> Nuestro equipo de expertos en educación revisará la información proporcionada y, utilizando nuestra innovadora tecnología basada en inteligencia artificial, generará una planificación de clases personalizada que se adapte a tus necesidades y objetivos.</li>
+                <li><strong>Revisión y ajustes:</strong> Antes de enviarte la planificación final, la revisaremos cuidadosamente para garantizar que cumple con tus expectativas y se ajusta a las normativas y estándares educativos aplicables.</li>
+                <li><strong>Entrega de la planificación:</strong> Una vez que la planificación esté lista, te la enviaremos por correo electrónico en un formato fácil de usar. Podrás descargarla, imprimirla y compartirla con tus colegas y alumnos según sea necesario.</li>
+                </ol>
+                <p>Con nuestro Planificador de Clases Personalizado, puedes estar seguro de que recibirás una planificación de alta calidad y perfectamente adaptada a tus necesidades. ¡No esperes más y comienza a transformar tu enseñanza hoy mismo!</p>
+            </div>
+            
+        <img src="../img/img5.png" class="background-image" alt="un reloj con un lapiz grafito que lo ">
+            
+        </section>
+        <section class="form-section">
+            <h3>Planificador de Clases Personalizado</h3>
+            <form id="class-planner-form">
+                <label for="age-group">Grupo de edad:</label>
+                <select id="age-group" name="age-group" required>
+                    <option value="6-7">6-7 años</option>
+                    <option value="7-8">7-8 años</option>
+                    <option value="8-9">8-9 años</option>
+                    <option value="9-10">9-10 años</option>
+                    <option value="10-11">10-11 años</option>
+                    <option value="11-12">11-12 años</option>
+                    <option value="12-13">12-13 años</option>
+                    <option value="13-14">13-14 años</option>
+                    <option value="14-15">14-15 años</option>
+                    <option value="15-16">15-16 años</option>
+                    <option value="16-17">16-17 años</option>
+                    <option value="17-18">17-18 años</option>
+                </select>
+
+                <label for="sessions-per-week">Sesiones por semana:</label>
+                <input type="number" id="sessions-per-week" name="sessions-per-week" min="1" required>
+
+                <label for="session-duration">Duración de cada sesión (minutos):</label>
+                <input type="number" id="session-duration" name="session-duration" min="30" required>
+
+                <label for="focus-areas">Áreas de enfoque (Educación física, Ambiental, Cultural):</label>
+                <input type="text" id="focus-areas" name="focus-areas" required>
+
+                <label for="school-context">Contexto escolar (urbano, rural, étnico, etc.):</label>
+                <input type="text" id="school-context" name="school-context" required>
+
+                <label for="resources">Recursos específicos disponibles:</label>
+                <textarea id="resources" name="resources" required></textarea>
+
+                <label for="general-objectives">Objetivos generales:</label>
+                <textarea id="general-objectives" name="general-objectives" required></textarea>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <input class="submit-button" type="submit" value="Enviar">
+            </form>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Todos los derechos reservados &copy; 2023</p>
+            <ul class="footer-menu">
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+        </div>
+    </footer> 
+</body>
+</html>

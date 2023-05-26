@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planifica tus clases</title>
+    
+    <!--Google fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- Css Sheets-->
+
+    <link rel="stylesheet" href="../css/Registro.css">
+</head>
+<body>
+    <header>
+        <h1>Registro</h1>
+        <nav>
+            <ul class="men-horizontal-1">
+                <li><a href="../index.html" id="Inicio">Inicio</a></li>
+                <li><a href="../pages/NuestroTrabajo.html" id="NuestroTrabajo">Nuestro Trabajo</a></li>
+                <li><a href="../pages/PlanificaTusClases.html" id="PlanificaTusClases">Planifica tus clases</a></li>
+                <li><a href="../pages/Registro.html"  id="Registro">Registro</a></li>
+                <li><a href="../pages/LogIn.html"  id="LogIn">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Regístrate para comenzar</h2>
+            <p>Únete a nuestra comunidad de profesionales de la educación y accede a nuestro innovador Planificador de Clases Personalizado. Al registrarte, podrás crear programas de estudio adaptados a las necesidades de tus alumnos, mejorar su experiencia de aprendizaje y aumentar su rendimiento académico. ¡No esperes más y comienza a transformar tu enseñanza hoy mismo!</p>
+        </section>
+    
+        <section>
+            <h2>Formulario de registro</h2>
+            <form id="registration-form">
+                <label for="full-name">Nombre completo:</label>
+                <input type="text" id="full-name" name="full-name" required>
+    
+                <label for="birth-date">Fecha de nacimiento:</label>
+                <input type="date" id="birth-date" name="birth-date" required>
+    
+                <label for="gender">Género:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Masculino</option>
+                    <option value="female">Femenino</option>
+                    <option value="other">Otro</option>
+                    <option value="prefer-not-to-say">Prefiero no decirlo</option>
+                </select>
+    
+                <label for="education-level">Nivel educativo:</label>
+                <select id="education-level" name="education-level" required>
+                    <option value="high-school">Secundaria</option>
+                    <option value="bachelor">Licenciatura</option>
+                    <option value="master">Maestría</option>
+                    <option value="doctorate">Doctorado</option>
+                </select>
+    
+                <label for="specialization">Área de especialización:</label>
+                <input type="text" id="specialization" name="specialization" required>
+    
+                <label for="interests">Intereses:</label>
+                <input type="text" id="interests" name="interests">
+    
+                <label for="address">Dirección:</label>
+                <input type="text" id="address" name="address" required>
+    
+                <label for="city">Ciudad:</label>
+                <input type="text" id="city" name="city" required>
+    
+                <label for="postal-code">Código postal:</label>
+                <input type="text" id="postal-code" name="postal-code" required>
+    
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+    
+                <label for="confirm-password">Confirma tu contraseña:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+    
+                <input class="submit-button" type="submit" value="Registrarse">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Todos los derechos reservados &copy; 2023</p>
+            <ul class="footer-menu">
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+        </div>
+    </footer> 
+</body>
+</html>
+        
