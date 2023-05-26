@@ -6,10 +6,12 @@
 }
 
 body {
+    position: relative;
     display: grid;
     grid-template-rows: auto 1fr auto;
     color: #333;
     line-height: 1.6;
+    background-color: #fafafa;
 }
 
 header {
@@ -23,6 +25,7 @@ header {
 header h1 {
     color: #fff;
     margin-left: 20px;
+    text-transform: uppercase;
 }
 
 header .men-horizontal-1 {
@@ -35,6 +38,7 @@ header .men-horizontal-1 a {
     text-decoration: none;
     color: #fff;
     padding: 8px 16px;
+    transition: background-color 0.3s ease;
 }
 
 header .men-horizontal-1 a:hover {
@@ -47,42 +51,41 @@ main {
     max-width: 1200px;
     display: grid;
     gap: 40px;
+    padding: 20px;
 }
 
 main h2 {
     text-align: center;
-}
-
-main .Contenedor1 {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-main .Contenedor1 p {
-    line-height: 1.5;
-}
-
-main .steps-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-main .steps-section .steps-list {
-    display: flex;
-    list-style: none;
-    gap: 40px;
-}
-
-main .steps-section .steps-list a {
-    text-decoration: none;
     color: #007bff;
+    margin-bottom: 20px;
 }
 
-main .steps-section .steps-list a:hover {
-    text-decoration: underline;
+main p {
+    color: #333;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
 footer {
@@ -91,6 +94,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #fff;
 }
 
 footer .footer-content {
@@ -114,11 +118,15 @@ footer .footer-menu a {
     text-decoration: none;
     color: #fff;
     padding: 8px 16px;
+    transition: background-color 0.3s ease;
 }
 
 footer .footer-menu a:hover {
     background-color: #444;
     border-radius: 4px;
+}
+h2 li{
+    color: #444;
 }
 .background-image {
     position: absolute;
@@ -130,4 +138,3 @@ footer .footer-menu a:hover {
     opacity: 0.3;
     z-index: -1;
 }
-
