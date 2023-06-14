@@ -174,4 +174,51 @@ footer .footer-menu a {
             text-align: center;
         }
     }
+    @keyframes fadeInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    header h1 {
+        /* Resto de estilos */
+        animation: fadeInDown 2s ease-in-out;
+    }
+    
+    @keyframes scaleUp {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    
+    form input[type="submit"] {
+        /* Resto de estilos */
+        animation: scaleUp 0.3s ease-in-out infinite;
+    }
+    
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    header .men-horizontal-1 a {
+        /* Resto de estilos */
+        animation: fadeIn 1s ease-in-out;
+    }
+    
     
