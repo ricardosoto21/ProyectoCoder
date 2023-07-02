@@ -1,0 +1,31 @@
+.navbar-brand {
+    color: $color-white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+
+    @media(max-width: $breakpoint-tablet) {
+        font-size: 1.2em;
+    }
+
+    @media(max-width: $breakpoint-mobile) {
+        font-size: 1em;
+    }
+}
+
+.navbar-nav {
+    .nav-link {
+        color: $color-white;
+        @include transition(background-color);
+    
+        &:hover {
+            background-color: $color-grey-hover;
+            border-radius: 4px;
+        }
+    }
+}
+header h1 {
+    animation: fadeInDown 2s ease-in-out;
+}
+header .men-horizontal-1 a {
+    animation: fadeIn 1s ease-in-out;
+}

@@ -1,0 +1,57 @@
+body {
+    position: relative;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    color: $color-grey-dark;
+    line-height: 1.6;
+    background-color: $color-grey-light;
+}
+
+h2 li {
+    color: $color-grey-dark;
+}
+main {
+    margin: 40px auto;
+    max-width: 1200px;
+    display: grid;
+    gap: 40px;
+    padding: 20px;
+}
+
+    h2 {
+        text-align: center;
+        color: $color-blue;
+        margin-bottom: 20px;
+        
+    }
+
+    p {
+        color: $color-grey-dark;
+        font-size: 1.1em;
+        margin-bottom: 10px;
+    }
+
+    @media(max-width: $breakpoint-tablet) {
+        margin: 20px auto;
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
+
+    @media(max-width: $breakpoint-mobile) {
+        margin: 10px auto;
+
+        h2 {
+            font-size: 1.3em;
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+    }
+

@@ -1,0 +1,25 @@
+form {
+    display: grid;
+    gap: 10px;
+
+    label {
+        font-weight: bold;
+    }
+
+    input[type="submit"] {
+        background-color: $color-blue;
+        color: $color-white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        @include transition(background-color);
+
+        &:hover {
+            background-color: $color-blue-hover;
+        }
+    }
+}
+form input[type="submit"] {
+    
+    animation: scaleUp 0.3s ease-in-out infinite;
+}
